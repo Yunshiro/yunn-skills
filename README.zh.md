@@ -159,10 +159,20 @@ yunn-skills/
     ├── html-plan/
     │   └── SKILL.md
     └── novel-writer/
-        └── SKILL.md
+        ├── SKILL.md
+        ├── agents/
+        │   └── openai.yaml
+        ├── references/
+        │   ├── commercial-mode.md
+        │   ├── literary-mode.md
+        │   ├── long-form-continuity.md
+        │   ├── planning.md
+        │   └── writing-and-revision.md
+        └── scripts/
+            └── check_novel.py
 ```
 
-每个 Skill 都是独立目录，可以按需单独安装。
+每个 Skill 都是独立目录，可以按需单独安装。`novel-writer` 只在对应创作阶段加载所需参考文件，并通过同一个确定性脚本完成单章与全稿检查。
 
 ## 更新
 

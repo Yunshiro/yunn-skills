@@ -162,10 +162,20 @@ yunn-skills/
     ├── html-plan/
     │   └── SKILL.md
     └── novel-writer/
-        └── SKILL.md
+        ├── SKILL.md
+        ├── agents/
+        │   └── openai.yaml
+        ├── references/
+        │   ├── commercial-mode.md
+        │   ├── literary-mode.md
+        │   ├── long-form-continuity.md
+        │   ├── planning.md
+        │   └── writing-and-revision.md
+        └── scripts/
+            └── check_novel.py
 ```
 
-Each skill is self-contained and can be installed independently.
+Each skill is self-contained and can be installed independently. `novel-writer` loads detailed references only when the corresponding writing stage needs them and uses one deterministic script for both chapter and manuscript checks.
 
 ## Updating
 
