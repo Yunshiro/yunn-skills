@@ -18,6 +18,8 @@ description: Create, continue, revise, or audit Chinese fiction through a staged
 
 商业网文中，代入感高于去 AI 味。不要为了减少心理活动而删掉主角的即时感知、身体反应、危险判断和明确欲望。
 
+商业网文的爽感结构与代入感同属第一优先：大纲与节拍阶段对照 `references/shuanwen-tech.md` 的爽感自检，正文阶段落实打脸四拍、差异感与低调装逼。
+
 ## 资源路由
 
 只读取当前阶段需要的参考文件：
@@ -26,6 +28,7 @@ description: Create, continue, revise, or audit Chinese fiction through a staged
 | --- | --- |
 | 需求采集、角色 DNA、大纲准备、情绪节拍 | [references/planning.md](references/planning.md) |
 | 商业网文的平台结构、黄金三章、爽点、冲突升级、代入感 | [references/commercial-mode.md](references/commercial-mode.md) |
+| 商业网文的爽感引擎：差异感、迪化、异性倾慕、低调装逼、反转节奏、爽感自检 | [references/shuanwen-tech.md](references/shuanwen-tech.md) |
 | 纯文学、征文、自留或文学模式 | [references/literary-mode.md](references/literary-mode.md) |
 | 正文创作、单章检查、全稿体检或分层润色 | [references/writing-and-revision.md](references/writing-and-revision.md) |
 | 达到 13 章或 5 万字、按卷创作、跨会话续写 | [references/long-form-continuity.md](references/long-form-continuity.md) |
@@ -98,7 +101,7 @@ output/
 
 先读取 `references/planning.md`，再按模式读取：
 
-- 商业网文：`references/commercial-mode.md`。
+- 商业网文：`references/commercial-mode.md` + `references/shuanwen-tech.md`。
 - 文学模式：`references/literary-mode.md`。
 
 商业网文不得使用“激励事件可以拖到全书四分之一处”的慢结构替代黄金三章。文学模式不得硬塞每 2000 字爽点或当面打脸。
@@ -107,13 +110,13 @@ output/
 
 ### 阶段四：情绪节拍
 
-读取 `references/planning.md` 的节拍规则。为每章写出事件目标、情绪变化、价值转折、代价、信息变化、伏笔和具体章末事件。
+读取 `references/planning.md` 的节拍规则，商业网文再对照 `references/shuanwen-tech.md` 的爽感自检（快感节奏、反转铺垫、期待感钩子）。为每章写出事件目标、情绪变化、价值转折、代价、信息变化、伏笔和具体章末事件。
 
 长篇先确认卷级节拍，再只展开当前卷。保存节拍表并等待确认。
 
 ### 阶段五：正文创作
 
-读取 `references/writing-and-revision.md`，并保持对应模式参考文件在上下文中。长篇还要读取 `references/long-form-continuity.md` 和当前进度文件。
+读取 `references/writing-and-revision.md`，并保持对应模式参考文件在上下文中（商业网文含 `references/shuanwen-tech.md`，落实打脸四拍、差异感与低调装逼）。长篇还要读取 `references/long-form-continuity.md` 和当前进度文件。
 
 每章按以下顺序完成：
 
@@ -171,6 +174,7 @@ python3 <skill-dir>/scripts/check_novel.py manuscript \
 - 所有必要确认节点均已通过，或用户明确要求跳过。
 - 角色、大纲、节拍和正文文件路径符合规范。
 - 每章机械检查通过，且完成无法脚本化的人工通读。
+- 商业网文已通过 `references/shuanwen-tech.md` 的爽感自检。
 - 伏笔、人物状态、能力限制、时间、距离和数量前后一致。
 - 长篇的进度与续写入口已经更新到最后完成的章节。
 - 最终报告列出已完成文件、总字数、检查结果和仍需用户决定的问题。
