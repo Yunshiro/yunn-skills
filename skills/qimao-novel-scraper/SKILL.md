@@ -16,7 +16,6 @@ description: 七猫小说扫榜 → 挑标杆 → 拆解前3章 → 生成新书
 ## 二、前置条件
 
 - playwright MCP 已连接（工具：browser_tabs / browser_navigate / browser_run_code_unsafe / browser_snapshot / browser_take_screenshot）。
-- 输出根目录：`C:\Users\Cookie\WorkBuddy\Claw\小说扫榜\七猫小说\`（不存在则先创建）。
 - 七猫无需登录即可抓取完整榜单与正文，无反爬。
 
 ## 三、七猫平台结构速查
