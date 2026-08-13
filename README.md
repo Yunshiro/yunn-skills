@@ -1,3 +1,5 @@
+
+
 # yunn-skills
 
 English | [中文](./README.zh.md)
@@ -151,6 +153,27 @@ output/
 ```
 
 The skill pauses at confirmation points so you can review the platform, premise, characters, outline, and beats before drafting continues.
+
+### obsidian-git-repo-sync
+
+Automatically initialize a local directory as a git repository and push all contents to a specified GitHub remote.
+
+```text
+$obsidian-git-repo-sync Push this project to https://github.com/user/repo.git
+```
+
+**Best for:**
+
+- Backing up projects to GitHub
+- Pushing local code changes to a remote repository
+- Initializing a git repository for a new directory
+
+**Features:**
+
+- Checks for git installation and guides the user
+- Handles remote configuration and branch setup
+- Manages initial commits and pushes to `main`
+- Detects and suggests `.gitignore` files to prevent syncing unnecessary data (e.g., `.obsidian/`, `node_modules/`)
 
 ## Repository Structure
 
